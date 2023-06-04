@@ -1,0 +1,142 @@
+body{
+    font-family: 'Comfortaa', cursive;
+    background-color: #1E1E24;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    position: sticky;
+    background: rgb(196, 80, 80);
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    vertical-align: baseline;
+    box-shadow: 0 0 10px 0 black;
+}
+input[type=text]::placeholder {
+	font-size: 14px;
+	color: rgb(158, 158, 158);
+    
+}
+.search-btn{
+    left:10px;
+}
+input{
+    
+    width: 160px;
+    border: none;
+    height: 30px;
+    
+    border-radius: 40px;
+    padding-left: 30px;
+    position: relative;
+    left:-2px;
+    outline: 0 ;
+}
+button{
+    border: none;
+    background-color: none;
+   
+}
+::placeholder {
+    color: #fa0000; /* цвет текста */
+    font-family: 'Comfortaa', cursive; /* шрифт */
+    font-size: 14px; /* размер шрифта */
+  }
+  .search-txt:focus {
+    
+  }
+
+.search-btn{
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    color:rgb(128, 39, 39);
+    left: 2px;
+}
+.rightnavbar{
+    color: white;
+    
+    display: flex;
+     
+}
+.textslogan{
+    
+    padding-top: 20px;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+
+}
+.first-cont{
+    position: static;
+    right: 30px;
+    margin-top: 0px;
+    background-color: white;
+    border-radius: 50px;
+    height: 410px;
+
+}
+
+.text-cent{
+    /* margin-top: 150px; */
+    padding: 15px;
+    /* line-height: 50%; */
+    color:black;
+    /* box-sizing:content-box; */
+    text-align: center;
+    font-weight: 700;
+}
+
+.adresfirst{
+text-align: center!important;
+font-family: 'Comfortaa';
+font-weight: 500;
+font-size: 14px;
+line-height: 25px;
+
+text-decoration: none;
+cursor: pointer;
+/* identical to box height, or 179% */
+
+color: #2A4646;
+
+}
+.adresfirst:hover{
+    color: #000;
+    text-decoration: dashed;
+}
+.second-cont{
+width: 100wh;    
+background: rgb(190,224,225);
+background: linear-gradient(90deg, rgba(190,224,225,1) 0%, rgba(134,190,191,1) 100%);
+
+border-radius: 50px;
+margin-top:178px;
+height: 410px;
+
+}
+.firstslide,.secondslide{
+    /* margin: auto; */
+    position: inherit
+}
+.imgfir{
+    margin: auto;
+    text-align: center;
+    
+    z-index: 3;
+    left:auto;
+}
+.imgfirstdog{
+    width: 430px;
+    margin-bottom: -20%;
+    display:block;
+    margin:auto;
+    position: absolute;
+    margin-bottom: 100px;
+}
