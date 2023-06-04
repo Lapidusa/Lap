@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Comfortaa', cursive;
     background-color: #1E1E24;
@@ -7,11 +10,12 @@ body{
 }
 
 .navbar{
+    position: fixed;
     width: 100%;
     position: sticky;
-    background: rgb(196, 80, 80);
+    background: #1E1E23;
     height: 50px;
-    text-align: center;
+    /* text-align: center; */
     justify-content: center;
     align-items: center;
     display: flex;
@@ -24,7 +28,8 @@ input[type=text]::placeholder {
     
 }
 .search-btn{
-    left:10px;
+    left:100px;
+    z-index: 3;
 }
 input{
     
@@ -38,11 +43,7 @@ input{
     left:-2px;
     outline: 0 ;
 }
-button{
-    border: none;
-    background-color: none;
-   
-}
+
 ::placeholder {
     color: #fa0000; /* цвет текста */
     font-family: 'Comfortaa', cursive; /* шрифт */
@@ -51,7 +52,9 @@ button{
   .search-txt:focus {
     
   }
-
+.search-box{
+    margin: 0;
+}
 .search-btn{
     z-index: 3;
     justify-content: center;
@@ -61,7 +64,7 @@ button{
 }
 .rightnavbar{
     color: white;
-    
+    padding-left: 20%;
     display: flex;
      
 }
@@ -74,7 +77,7 @@ button{
 
 }
 .first-cont{
-    position: static;
+    position: sticky;
     right: 30px;
     margin-top: 0px;
     background-color: white;
@@ -99,7 +102,7 @@ font-family: 'Comfortaa';
 font-weight: 500;
 font-size: 14px;
 line-height: 25px;
-
+left: 50%;
 text-decoration: none;
 cursor: pointer;
 /* identical to box height, or 179% */
@@ -109,7 +112,7 @@ color: #2A4646;
 }
 .adresfirst:hover{
     color: #000;
-    text-decoration: dashed;
+    
 }
 .second-cont{
 width: 100wh;    
@@ -125,18 +128,12 @@ height: 410px;
     /* margin: auto; */
     position: inherit
 }
-.imgfir{
-    margin: auto;
-    text-align: center;
-    
-    z-index: 3;
-    left:auto;
-}
+
 .imgfirstdog{
     width: 430px;
     margin-bottom: -20%;
     display:block;
-    margin:auto;
+    z-index: 3;
     position: absolute;
     margin-bottom: 100px;
 }
