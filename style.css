@@ -1,7 +1,8 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Comfortaa', cursive;
     background-color: #1E1E24;
     width: 100%;
@@ -9,10 +10,11 @@ body{
     padding: 0;
 }
 
-.navbar{
-    position: fixed;
-    width: 100%;
-    position: sticky;
+.header-container {
+    position: static;
+    width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
     background: #1E1E23;
     height: 50px;
     /* text-align: center; */
@@ -22,118 +24,250 @@ body{
     vertical-align: baseline;
     box-shadow: 0 0 10px 0 black;
 }
-input[type=text]::placeholder {
-	font-size: 14px;
-	color: rgb(158, 158, 158);
-    
+
+.main-nav-search {
+    position: relative;
 }
-.search-btn{
-    left:100px;
-    z-index: 3;
+
+input[type=search]::placeholder {
+    font-size: 14px;
+    color: rgb(158, 158, 158);
+
 }
-input{
-    
+
+.search-btn {
+	position: absolute;
+	top: 7px;
+	left: -31px;
+	border: none;
+	background: none;
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+input {
+
     width: 160px;
     border: none;
     height: 30px;
-    
+
     border-radius: 40px;
     padding-left: 30px;
     position: relative;
-    left:-2px;
-    outline: 0 ;
+    left: -2px;
+    outline: 0;
 }
 
 ::placeholder {
-    color: #fa0000; /* цвет текста */
-    font-family: 'Comfortaa', cursive; /* шрифт */
-    font-size: 14px; /* размер шрифта */
-  }
-  .search-txt:focus {
-    
-  }
-.search-box{
+    color: #fa0000;
+    /* цвет текста */
+    font-family: 'Comfortaa', cursive;
+    /* шрифт */
+    font-size: 14px;
+    /* размер шрифта */
+}
+
+.search-txt:focus {}
+
+.search-box {
     margin: 0;
 }
-.search-btn{
+.navbar{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+.search-btn {
     z-index: 3;
     justify-content: center;
     align-items: center;
-    color:rgb(128, 39, 39);
+    color: rgb(128, 39, 39);
     left: 2px;
 }
-.rightnavbar{
+
+.rightnavbar {
     color: white;
-    padding-left: 20%;
+    padding-left: 45%;
     display: flex;
-     
 }
-.textslogan{
-    
-    padding-top: 20px;
-    text-align: center;
-    font-size: 56px;
+
+.first-cont {
+    left: 50%;
+   
+    width: 1460px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    height: 410px;
+}
+
+.first-cont__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 0 15px;
+    width: 100%;
+}
+
+.logo {
+    align-self: flex-start;
+    width: 40px;
+    height: 40px;
+}
+
+.text-nav {
+    margin: 0 auto;
+}
+.phone {
+    padding-left: 24px;
+    margin-bottom: -20px;
+}
+.number{
+    padding-left: 14px;
+}
+
+.adress{
+    padding-left: 14px;
+}
+.map{
+    padding-left: 24px;
+}
+.title {
+    display: block;
+    width: 323px;
+    font-family: 'Comfortaa';
+    font-style: normal;
     font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.text-slogan {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.button-menu-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #9BC3C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.burger-button {
+    width: 35px;
+    height: 2px;
+    background-color: #699798;
+    margin-bottom: 12px;
+}
+
+.adresfirst {
+    text-align: center !important;
+    font-family: 'Comfortaa';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    left: 50%;
+    text-decoration: none;
+    cursor: pointer;
+    /* identical to box height, or 179% */
+
+    color: #2A4646;
 
 }
-.first-cont{
-    position: sticky;
-    right: 30px;
-    margin-top: 0px;
-    background-color: white;
+
+.adresfirst:hover {
+    color: #000;
+
+}
+
+.second-cont {
+    margin-right: auto;
+    margin-left: auto;
+    
+    margin-top: 2px;
+    
+    position: relative;
+    padding-left: 22px;
+    padding-right: 22px;
+    width: 1460px;
+    background: rgb(190, 224, 225);
+    background: linear-gradient(90deg, rgba(190, 224, 225, 1) 0%, rgba(134, 190, 191, 1) 100%);
     border-radius: 50px;
     height: 410px;
 
 }
 
-.text-cent{
-    /* margin-top: 150px; */
-    padding: 15px;
-    /* line-height: 50%; */
-    color:black;
-    /* box-sizing:content-box; */
-    text-align: center;
+.text-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.textchekup {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 245px;
+    color: #2A4646;
+    margin-top: 114px;
+
+}
+
+.textchekup h2 {
+    margin: 0;
+}
+
+.textchekup-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2A4646;
+    margin-top: 20px;
+}
+
+.more-details {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #fff;
+    padding: 12px 16px;
+    max-width: 156px;
+    background: linear-gradient(96.02deg, #466F6F 0%, #2A4646 100%);
+    border-radius: 45px;
+    text-decoration: none;
+    margin-top: 65px;
+}
+.more-details:hover{
+    background: none;
+    border:  3px solid #2A4649;
+    color:#2A4649;
     font-weight: 700;
 }
-
-.adresfirst{
-text-align: center!important;
-font-family: 'Comfortaa';
-font-weight: 500;
-font-size: 14px;
-line-height: 25px;
-left: 50%;
-text-decoration: none;
-cursor: pointer;
-/* identical to box height, or 179% */
-
-color: #2A4646;
-
-}
-.adresfirst:hover{
-    color: #000;
-    
-}
-.second-cont{
-width: 100wh;    
-background: rgb(190,224,225);
-background: linear-gradient(90deg, rgba(190,224,225,1) 0%, rgba(134,190,191,1) 100%);
-
-border-radius: 50px;
-margin-top:178px;
-height: 410px;
-
-}
-.firstslide,.secondslide{
-    /* margin: auto; */
-    position: inherit
-}
-
-.imgfirstdog{
-    width: 430px;
-    margin-bottom: -20%;
-    display:block;
-    z-index: 3;
+.imgfirstdog {
     position: absolute;
-    margin-bottom: 100px;
+    top: 29%; /* Размещаем элемент на 50% высоты родительского блока */
+    left: 50%; /* Размещаем элемент на 50% ширины родительского блока */
+    transform: translate(-50%, -50%); /* Центрируем элемент по горизонтали и вертикали */
+    z-index: 999; /* Устанавливаем элемент поверх других элементов */
+}
+.third-cont{
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    height: 5%;
 }

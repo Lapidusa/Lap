@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="favicon" href="" type="image/svg+xml">    
+<link rel="favicon" href="#" type="image/svg+xml">    
 <link rel="favicon" href="img/logo.svg" type="image/svg+xml">    
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Усы, лапы, хвост</title>
@@ -14,53 +14,92 @@
 
 
 <body>
-    
-    <div class="navbar" >
+    <header class="navbar" >
+        <nav  class="main-header">
+            <div class="header-container">
+                <form class="main-nav-search"> <!--поиск -->
+                    <label for="nav-search"></label>
+                    <input class="search-txt" id="nav-search" type="search" name="search-site" placeholder="Поиск">
+                    <button class="search-btn" type="submit">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6" cy="6" r="5.5" stroke="black"/>
+                            <path d="M10 10L13 13" stroke="black" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </form>
 
-        <div class="search-box"> <!--поиск -->
-            <a href="#" class="search-btn"><img src="img/search.svg"></img></a>
-            <input type="text"  class="search-txt" placeholder="Поиск...">
-        </div>
-
-        <div class="rightnavbar">
-            <div class="timesheet">
-                Ежедневно 9:00 - 20:00
+                <div class="rightnavbar">
+                    <div class="timesheet">
+                        Ежедневно 9:00 - 20:00
+                    </div>
+                    <div class="phone">
+                        <img src="img/phone.svg"></img>
+                    </div>
+                    <div class="number">
+                        +7 352 62 01 52
+                    </div>
+                    <div class="map">
+                        <img src="img/map.svg"></img>
+                    </div>
+                    <div class="adress">
+                        Чебоксары, ул. К. Маркса, 27  
+                    </div>
+                </div>
             </div>
-            <div class="phone">
-                <img src="img/phone.svg"></img>
+        </nav>
+    </header>
+
+
+
+    <section class="first-cont">
+        <div class="first-cont__container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img/logo.svg" alt="Логотип сайта">
+                </a>
             </div>
-    
-        </div>
 
-        
-        </div>
-
-    </div>
-
-    <div class="first-cont">
-        <div class="text-nav">
-                   
-            <div class="text-cent">Ветеринарная клиника<br>
-            учебно-практический центр
-        </div>
-            <a href="onas.html" class="adresfirst">ул. К. Маркса, 27</a>
+            <div class="text-nav">
+                <h1 class="title">
+                    Ветеринарная клиника учебно-практический центр
+                    <a href="onas.html" class="adresfirst">ул. К. Маркса, 27</a>
+                </h1>
             </div>
-            <div class="textslogan">Здоровье вашего питомца на наших плечах</div>
+            <div href="menu.html" class="button-menu-box">
+                
+                <span class="burger-button"></span>
+                <span class="burger-button"></span>
+                <span class="burger-button"></span>
+                
+            </div>
+        </div>
+        <span class="text-slogan">Здоровье вашего питомца в наших руках</span>
+    </section>
 
-    <div class="second-cont">
-        <div class="textchekup">
-            <h2>Check Up<br>
-            (комплексная<br>
-            диагностика)</h2> 
-
+    <section class="second-cont">
+        <div class="text-container">
+            <div class="textchekup">
+                <h2>Check Up (комплексная диагностика)</h2> 
+            </div>
+            <span class="textchekup-description">
+                Комплесное экспресс-оборудование вашего питомца. Услуга доступна только в будни
+            </span>
+            <a href="#" class="more-details">Подробнее</a>
+            <div class="secondslide">
         </div>
         <div class="imgfirstdog">
             <img src="img/dog1slide.png">
         </div>
-        <div class="secondslide">
+    </section>
 
+    <section class="third-cont">
+        <div class="imgklinika">
+            <img src="img/klinika.png">
         </div>
-    </div>    
-    </div>
+    </section>
+
+
+
+
 </body>
 </html>

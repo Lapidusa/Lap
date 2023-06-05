@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #1E1E24;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+margin-top: 85px;
+margin-left: 60px;
+
+}
+.textmenu{
+text-decoration: none;
+}
